@@ -85,8 +85,7 @@
         <div style="background-image: url('../img/dd.jpeg');" class="item">
           <div class="overlay"></div>
           <div class="carousel-caption">
-            <h1 class="super-heading">Lorem ipsum dolor color</h1>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <h1 class="super-heading">Lanchonete do Tio Wel</h1>           
           </div>
         </div>
       </div>
@@ -104,24 +103,30 @@
     <form id="form1" runat="server">
  <div class ="campos" id ="campos" runat="server">
                     <div class ="form" id ="form" runat="server">
-            <p>Formulário</p>
+            <p>Escolha seu Produto</p>
         </div>
-            <asp:ListBox CssClass="form-control" ID="ListBox1" runat="server" SelectionMode="Multiple">
+            <asp:ListBox CssClass="form-control" ID="ListBox1" runat="server" SelectionMode="Multiple" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" autopostback="false" >
                 <asp:listItem CssClass="form-control" id="resultProd" runat="server"></asp:listItem>
             </asp:ListBox>
      <br />
-     <asp:label CssClass="form-control" ID="label1" Font-Bold="true" runat="server"></asp:label>
+     
             <p>Digite o código do cliente:<asp:TextBox CssClass="form-control" runat="server" id="CodCli"/></p>
-            <p>Valor Total:<asp:TextBox CssClass="form-control" runat="server" id="ValTot"/></p>
+            <p>Valor do produto:<asp:TextBox CssClass="form-control"   runat ="server" autopostback="true" id="Valitem"/>
+            </p>
+     <asp:label CssClass="form-control" ID="label1" Font-Bold="true" runat="server"></asp:label>
             
              <%--<asp:Button ID="btnGravar" runat ="server" OnClick="btnGravar_Click" Text="Gravar Pedido" />--%>
             <asp:TextBox CssClass="form-control" runat="server" id="resultado"/>
+
         </div>
+        </form>
         </div>
         </div>
         </div>
         
-    </form>
+    
+
+        
 
 
 
@@ -301,10 +306,10 @@
     </footer>
     <!-- Javascript files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.cookie.js"> </script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/front.js"></script><!-- substitute:livereload -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.cookie.js"> </script>
+    <script src="../js/lightbox.min.js"></script>
+    <script src="../js/front.js"></script><!-- substitute:livereload -->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
     <!---->
     <script>
@@ -330,5 +335,3 @@
 
 
 
-</body>
-</html>

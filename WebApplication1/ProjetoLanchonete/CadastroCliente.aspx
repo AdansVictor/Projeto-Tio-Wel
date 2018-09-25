@@ -88,15 +88,13 @@
         <div style="background-image: url('../img/aa.jpeg');" class="item">
           <div class="overlay"></div>
           <div class="carousel-caption">
-            <h1 class="super-heading">Praesent dapibus, neque id cursus faucibus</h1>
-            <p class="super-paragraph">Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci</p>
+            <h1 class="super-heading">Lanchonete do Tio Wel</h1>
           </div>
         </div>
         <div style="background-image: url('../img/dd.jpeg');" class="item">
           <div class="overlay"></div>
           <div class="carousel-caption">
-            <h1 class="super-heading">Lorem ipsum dolor color</h1>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <h1 class="super-heading">Lanchonete do Tio Wel</h1>
           </div>
         </div>
       </div>
@@ -325,10 +323,10 @@
     </footer>
     <!-- Javascript files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.cookie.js"> </script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/front.js"></script><!-- substitute:livereload -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.cookie.js"> </script>
+    <script src="../js/lightbox.min.js"></script>
+    <script src="../js/front.js"></script><!-- substitute:livereload -->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
     <!---->
     <script>

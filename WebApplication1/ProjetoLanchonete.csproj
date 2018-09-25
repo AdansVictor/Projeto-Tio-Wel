@@ -258,7 +258,6 @@
     <Content Include="js\jquery.cookie.js" />
     <Content Include="js\lightbox.js" />
     <Content Include="js\lightbox.min.js" />
-    <Content Include="js\main.js" />
     <Content Include="lib\animate\animate.css" />
     <Content Include="lib\animate\animate.min.css" />
     <Content Include="lib\appear\jquery.appear.js" />
@@ -303,6 +302,7 @@
     <Content Include="ProjetoLanchonete\ConsultaCliente.aspx" />
     <Content Include="ProjetoLanchonete\ConsultaProduto.aspx" />
     <Content Include="ProjetoLanchonete\Pedidos.aspx" />
+    <Content Include="ProjetoLanchonete\ProdutoDetalhe.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -350,6 +350,13 @@
     </Compile>
     <Compile Include="ProjetoLanchonete\Pedidos.aspx.designer.cs">
       <DependentUpon>Pedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetoLanchonete\ProdutoDetalhe.aspx.cs">
+      <DependentUpon>ProdutoDetalhe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjetoLanchonete\ProdutoDetalhe.aspx.designer.cs">
+      <DependentUpon>ProdutoDetalhe.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

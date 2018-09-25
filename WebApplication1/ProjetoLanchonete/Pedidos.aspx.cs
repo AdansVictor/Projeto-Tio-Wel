@@ -21,10 +21,14 @@ namespace WebApplication1.ProjetoLanchonete
 
             foreach (var produto in ListaProd)
             {
+                ListItem item = new ListItem();
+                item.Text = produto.DescProduto;
+                item.Value = produto.IdProd.ToString();
 
                 //ArrayList values = new ArrayList();
 
-                ListBox1.Items.Add(produto.DescProduto);
+                ListBox1.Items.Add(item);
+               
 
 
                 //ListBox1.DataTextField = ("DescProduto");
@@ -42,6 +46,17 @@ namespace WebApplication1.ProjetoLanchonete
                 //Response.Write("Index =" + ListBox1.Items.IndexOf(li).ToString() + "<br>");
                 //Response.Write("----------------------------------------");
 
+
+
+
+               
+
+                
+
+
+
+
+
             }
 
             //resultProd. InnerHtml = gridProd.ToString();
@@ -57,6 +72,10 @@ namespace WebApplication1.ProjetoLanchonete
             }
         }
 
+        protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Valitem.Text = ListBox1.SelectedItem.Text;
+        }
     }
 
     //void btnGravar_Click(object sender, EventArgs e)

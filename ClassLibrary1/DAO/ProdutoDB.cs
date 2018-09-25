@@ -142,5 +142,39 @@ namespace Web.Controller.DAO
         }
 
 
+
+
+        internal List<Produtos> ConsultaProdutosVal()
+        {
+
+            List<Produtos> lstProdutos = new List<Produtos>();
+            SqlConnection conn = new SqlConnection(conecta);
+
+            string sql = "Select ValorProduto from Produto where IdProd =@IdProd";
+
+            SqlCommand cmd = new SqlCommand(sql, conn);
+
+            conn.Open();
+
+            SqlDataReader leitor = cmd.ExecuteReader();
+
+            while (leitor.Read())
+
+            {
+                //Precisa finalizar a linha com .ToString
+
+                Produtos Produtos = new Produtos();
+                //Produtos.IdProd = Convert.ToInt32(leitor["IdProd"].ToString());
+                Produtos.ValorProduto = leitor["ValProduto"].ToString();
+                lstProdutos.Add(Produtos);
+            }
+
+            conn.Close();
+
+            return lstProdutos;
+
+        }
+
+
     }
 }

@@ -25,6 +25,11 @@ namespace Web.Controller.Controller
             return new ProdutoDB().ConsultaProdutosPed();
         }
 
+                public List<Produtos> ConsultaProdutosVal()
+        {
+            return new ProdutoDB().ConsultaProdutosVal();
+        }
+
         public void DeletarProduto(string produto)
         {
             new ProdutoDB().DeletarProduto(produto);
