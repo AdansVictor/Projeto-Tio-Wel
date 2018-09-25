@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoLanchonete", "WebApplication1\ProjetoLanchonete.csproj", "{8653F9C1-B852-4618-A8AB-6FF106B1125D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Controller", "ClassLibrary1\Web.Controller.csproj", "{88B3B3B1-2CE4-4F29-97F1-65B2D099E8FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8653F9C1-B852-4618-A8AB-6FF106B1125D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8653F9C1-B852-4618-A8AB-6FF106B1125D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8653F9C1-B852-4618-A8AB-6FF106B1125D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8653F9C1-B852-4618-A8AB-6FF106B1125D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88B3B3B1-2CE4-4F29-97F1-65B2D099E8FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B3B3B1-2CE4-4F29-97F1-65B2D099E8FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B3B3B1-2CE4-4F29-97F1-65B2D099E8FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B3B3B1-2CE4-4F29-97F1-65B2D099E8FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B701B9FE-FB29-4408-91EE-1070EA04E10B}
+	EndGlobalSection
+EndGlobal
