@@ -58,6 +58,15 @@ namespace WebApplication1.ProjetoLanchonete {
         protected global::System.Web.UI.WebControls.ListItem resultProd;
         
         /// <summary>
+        /// Valitem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Valitem;
+        
+        /// <summary>
         /// CodCli control.
         /// </summary>
         /// <remarks>
@@ -67,13 +76,13 @@ namespace WebApplication1.ProjetoLanchonete {
         protected global::System.Web.UI.WebControls.TextBox CodCli;
         
         /// <summary>
-        /// Valitem control.
+        /// Valcli control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Valitem;
+        protected global::System.Web.UI.WebControls.TextBox Valcli;
         
         /// <summary>
         /// label1 control.

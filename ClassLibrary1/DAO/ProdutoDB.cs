@@ -116,7 +116,7 @@ namespace Web.Controller.DAO
             List<Produtos> lstProdutos = new List<Produtos>();
             SqlConnection conn = new SqlConnection(conecta);
 
-            string sql = "Select DescProduto from Produtos ORDER BY DescProduto";
+            string sql = "Select * from Produtos ORDER BY DescProduto";
 
             SqlCommand cmd = new SqlCommand(sql, conn);
 
@@ -129,10 +129,11 @@ namespace Web.Controller.DAO
             {
                 //Precisa finalizar a linha com .ToString
 
-                Produtos Produtos = new Produtos();
-                //Produtos.IdProd = Convert.ToInt32(leitor["IdProd"].ToString());
-                Produtos.DescProduto = leitor["DescProduto"].ToString();
-                lstProdutos.Add(Produtos);
+                Produtos produto = new Produtos();
+                produto.IdProd = Convert.ToInt32(leitor["IdProd"].ToString());
+                produto.DescProduto = leitor["DescProduto"].ToString();
+
+                lstProdutos.Add(produto);
             }
 
             conn.Close();
@@ -144,16 +145,15 @@ namespace Web.Controller.DAO
 
 
 
-        internal List<Produtos> ConsultaProdutosVal()
+        internal Produtos ConsultaProdutosVal(string Id)
         {
-
-            List<Produtos> lstProdutos = new List<Produtos>();
+            Produtos prod = new Produtos();
             SqlConnection conn = new SqlConnection(conecta);
 
-            string sql = "Select ValorProduto from Produto where IdProd =@IdProd";
+            string sql = "Select ValorProduto from Produtos where IdProd = @IdProd";
 
             SqlCommand cmd = new SqlCommand(sql, conn);
-
+            cmd.Parameters.Add(new SqlParameter("@IdProd",Id));
             conn.Open();
 
             SqlDataReader leitor = cmd.ExecuteReader();
@@ -163,15 +163,14 @@ namespace Web.Controller.DAO
             {
                 //Precisa finalizar a linha com .ToString
 
-                Produtos Produtos = new Produtos();
+                
                 //Produtos.IdProd = Convert.ToInt32(leitor["IdProd"].ToString());
-                Produtos.ValorProduto = leitor["ValProduto"].ToString();
-                lstProdutos.Add(Produtos);
+                prod.ValorProduto = leitor["ValorProduto"].ToString();
             }
 
             conn.Close();
 
-            return lstProdutos;
+            return prod;
 
         }
 

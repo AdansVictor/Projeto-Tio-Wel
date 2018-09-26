@@ -113,7 +113,7 @@
     <div class ="col-md12">
      <form id="form1" runat="server">
             <br />
-     <table>
+     <table class ="table table-hover">
      <thead>
          <tr>
          <th>Produto</th>

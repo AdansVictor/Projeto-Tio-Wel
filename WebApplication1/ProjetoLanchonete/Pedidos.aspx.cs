@@ -13,68 +13,83 @@ namespace WebApplication1.ProjetoLanchonete
 {
     public partial class Pedidos : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<Produtos> ListaProd = new ProdutoController().ConsultaProdutosPed();
-
-            //StringBuilder gridProd = new StringBuilder();
-
-            foreach (var produto in ListaProd)
+            if (!IsPostBack)
             {
-                ListItem item = new ListItem();
-                item.Text = produto.DescProduto;
-                item.Value = produto.IdProd.ToString();
-
-                //ArrayList values = new ArrayList();
-
-                ListBox1.Items.Add(item);
-               
-
-
-                //ListBox1.DataTextField = ("DescProduto");
-                //ListBox1.DataValueField = "IdProd";
+                // Validate initially to force asterisks
+                // to appear before the first roundtrip.
 
 
 
+                List<Produtos> ListaProd = new ProdutoController().ConsultaProdutosPed();
 
-                //gridProd.Append("<tr>");
-                //gridProd.Append(string.Format("<td>{0}</td>", produto.IdProd));
-                //gridProd.Append(string.Format("<td>{0}</td>", produto.DescProduto));
-                //gridProd.Append("</tr>");
-                //Response.Write("Value=" + Convert.ToString(produto.IdProd) + "<br>");
-                //Response.Write("Text =" + produto.DescProduto + "<br>");
-                //Response.Write("Index =" + ListBox1.Items.IndexOf(li).ToString() + "<br>");
-                //Response.Write("----------------------------------------");
+                //StringBuilder gridProd = new StringBuilder();
+
+                foreach (var produto in ListaProd)
+                {
+                    ListItem item = new ListItem();
+                    item.Text = produto.DescProduto;
+                    item.Value = produto.IdProd.ToString();
+
+                    //ArrayList values = new ArrayList();
+
+                    ListBox1.Items.Add(item);
 
 
 
-
-               
-
-                
+                    //ListBox1.DataTextField = ("DescProduto");
+                    //ListBox1.DataValueField = "IdProd";
 
 
 
 
+                    //gridProd.Append("<tr>");
+                    //gridProd.Append(string.Format("<td>{0}</td>", produto.IdProd));
+                    //gridProd.Append(string.Format("<td>{0}</td>", produto.DescProduto));
+                    //gridProd.Append("</tr>");
+                    //Response.Write("Value=" + Convert.ToString(produto.IdProd) + "<br>");
+                    //Response.Write("Text =" + produto.DescProduto + "<br>");
+                    //Response.Write("Index =" + ListBox1.Items.IndexOf(li).ToString() + "<br>");
+                    //Response.Write("----------------------------------------");
 
-            }
-
-            //resultProd. InnerHtml = gridProd.ToString();
 
 
-            if (ListBox1.SelectedIndex == -1)
-            {
-                label1.ForeColor = System.Drawing.Color.Red;
-            }
-            else
-            {
-                label1.ForeColor = System.Drawing.Color.Black;
+
+
+
+
+
+
+
+
+
+                }
+
+                //resultProd. InnerHtml = gridProd.ToString();
+
+
+                if (ListBox1.SelectedIndex == -1)
+                {
+                    label1.ForeColor = System.Drawing.Color.Red;
+                }
+                else
+                {
+                    label1.ForeColor = System.Drawing.Color.Black;
+                }
             }
         }
 
-        protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+
+
+        protected void ListBox1_SelectedIndexChanged1(object sender, EventArgs e)
         {
-            Valitem.Text = ListBox1.SelectedItem.Text;
+            Produtos prod = new ProdutoController().ConsultaProdutosVal(ListBox1.SelectedItem.Value);
+
+
+
+            Valitem.Text = prod.ValorProduto;
         }
     }
 

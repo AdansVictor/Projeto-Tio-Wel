@@ -48,7 +48,7 @@
                 <ul class="dropdown-menu">
                   <li><a href="ConsultaProduto.aspx">Produtos</a></li>
                   <li><a href="ConsultaCliente.aspx">Clientes</a></li>
-                  <li><a href="#">Faça Aqui Seu Pedido</a></li>
+                  <li><a href="Pedidos.aspx">Faça Aqui Seu Pedido</a></li>
                 </ul>
               </li>
               <li><a href="/ProjetoLanchonete/CadastroCliente.aspx">Adcionar Clientes</a></li>
@@ -78,8 +78,7 @@
         <div style="background-image: url('../img/aa.jpeg');" class="item">
           <div class="overlay"></div>
           <div class="carousel-caption">
-            <h1 class="super-heading">Praesent dapibus, neque id cursus faucibus</h1>
-            <p class="super-paragraph">Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci</p>
+            <h1 class="super-heading">Lanchonete do Tio Wel</h1>
           </div>
         </div>
         <div style="background-image: url('../img/dd.jpeg');" class="item">
@@ -105,13 +104,14 @@
                     <div class ="form" id ="form" runat="server">
             <p>Escolha seu Produto</p>
         </div>
-            <asp:ListBox CssClass="form-control" ID="ListBox1" runat="server" SelectionMode="Multiple" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" autopostback="false" >
+            <asp:ListBox CssClass="form-control" ID="ListBox1" runat="server" SelectionMode="Multiple" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged1" autopostback="true" >
                 <asp:listItem CssClass="form-control" id="resultProd" runat="server"></asp:listItem>
             </asp:ListBox>
      <br />
-     
-            <p>Digite o código do cliente:<asp:TextBox CssClass="form-control" runat="server" id="CodCli"/></p>
             <p>Valor do produto:<asp:TextBox CssClass="form-control"   runat ="server" autopostback="true" id="Valitem"/>
+            <p>Digite o código do cliente:<asp:TextBox CssClass="form-control" runat="server" id="CodCli"/></p>
+            <p>Nome do Cliente:<asp:TextBox CssClass="form-control"   runat ="server" autopostback="true" id="Valcli"/>
+            
             </p>
      <asp:label CssClass="form-control" ID="label1" Font-Bold="true" runat="server"></asp:label>
             

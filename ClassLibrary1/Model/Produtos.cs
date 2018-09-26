@@ -16,6 +16,10 @@ namespace Web.Controller.Model
             set { _IdProd = value; }
         }
 
+
+
+
+
         private string _DescProduto;
 
         public string DescProduto

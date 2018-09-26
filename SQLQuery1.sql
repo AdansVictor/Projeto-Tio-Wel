@@ -3,6 +3,8 @@
 
 Select  * from information_schema.columns WHERE TABLE_NAME='Produtos' 
 
+Select * from Produtos ORDER BY DescProduto
+
 select *  from Pedidos
 
 ALTER TABLE Pedidos

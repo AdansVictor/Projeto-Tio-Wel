@@ -49,7 +49,7 @@
                 <ul class="dropdown-menu">
                   <li><a href="ConsultaProduto.aspx">Produtos</a></li>
                   <li><a href="ConsultaCliente.aspx">Clientes</a></li>
-                  <li><a href="#">Faça Aqui Seu Pedido</a></li>
+                  <li><a href="Pedidos.aspx">Faça Aqui Seu Pedido</a></li>
                 </ul>
               </li>
               <li><a href="/ProjetoLanchonete/CadastroCliente.aspx">Adcionar Clientes</a></li>
@@ -113,7 +113,7 @@
 
             <h1>Consulta de Clientes</h1>
             <br />
-            <table>
+            <table class="table table-hover">
             <thead>
                 <tr>
                     <th>Nome Completo</th>                   
