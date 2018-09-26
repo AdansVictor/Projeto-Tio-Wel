@@ -32,6 +32,8 @@ namespace Web.Controller.Controller
             return new ProdutoDB().ConsultaProdutosVal(Id);
         }
 
+
+
         public void DeletarProduto(string produto)
         {
             new ProdutoDB().DeletarProduto(produto);

@@ -18,5 +18,11 @@ namespace Web.Controller.Controller
         {
             return new ClienteDB().ConsultaCliente();
         }
+
+        //retorna cliente selecionado
+        public Clientes ConsultaClientes(string Id)
+        {
+            return new ClienteDB().ConsultaClientes(Id);
+        }
     }
 }

@@ -108,15 +108,27 @@
                 <asp:listItem CssClass="form-control" id="resultProd" runat="server"></asp:listItem>
             </asp:ListBox>
      <br />
-            <p>Valor do produto:<asp:TextBox CssClass="form-control"   runat ="server" autopostback="true" id="Valitem"/>
-            <p>Digite o código do cliente:<asp:TextBox CssClass="form-control" runat="server" id="CodCli"/></p>
-            <p>Nome do Cliente:<asp:TextBox CssClass="form-control"   runat ="server" autopostback="true" id="Valcli"/>
             
-            </p>
+
+
+            <asp:ListBox CssClass="form-control" ID="ListBox2" runat="server" SelectionMode="Single" OnSelectedIndexChanged ="ListBox2_SelectedIndexChanged" AutoPostBack="true">
+                <asp:ListItem CssClass ="form-control" id ="resultCli" runat ="server"></asp:ListItem> 
+            </asp:ListBox>
+    <br />
+                <asp:TextBox CssClass="form-control" placeholder="Nome do Cliente"  runat ="server" autopostback="true" id="Valcli"/>
+                <asp:TextBox CssClass="form-control" placeholder="Descrição do Produto"   runat ="server" autopostback="true" id="Valitem" />
+                <asp:TextBox CssClass="form-control" placeholder="Quantidade de Produtos"   runat ="server" autopostback="true" id="QuantProd" />
+
+                <asp:Button ID="btnPed" runat ="server" CssClass="btn btn-success" OnClick="btnPed_Click" Text="Gravar pedido" />
+                <asp:TextBox runat="server" id="resultado" Width="232px"/>
+
+<%--            <p>Digite o código do cliente:<asp:TextBox CssClass="form-control" runat="server" id="CodCli"/></p>
+            <p>Nome do Cliente:<asp:TextBox CssClass="form-control"   runat ="server" autopostback="true" id="Valcli"/>--%>
+            
+
      <asp:label CssClass="form-control" ID="label1" Font-Bold="true" runat="server"></asp:label>
             
              <%--<asp:Button ID="btnGravar" runat ="server" OnClick="btnGravar_Click" Text="Gravar Pedido" />--%>
-            <asp:TextBox CssClass="form-control" runat="server" id="resultado"/>
 
         </div>
         </form>

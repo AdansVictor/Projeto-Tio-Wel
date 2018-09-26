@@ -41,5 +41,40 @@ namespace Web.Controller.DAO
             return lstProdutos;
 
         }
+
+
+
+        internal Pedidos InserirPedido(string nomecli, string descprod,string QuantProd)
+        {
+            SqlConnection conn = new SqlConnection(conecta);
+            string sqlQuery = "INSERT INTO Pedidos (nomecli,descprod,QuantProd)VALUES(@nomecli,@descprod,@QuantProd)";
+            SqlCommand comando = new SqlCommand(sqlQuery, conn);
+            comando.Parameters.Add(new SqlParameter("@nomecli", nomecli));
+            comando.Parameters.Add(new SqlParameter("@descprod", descprod));
+            comando.Parameters.Add(new SqlParameter("@QuantProd", QuantProd));
+
+            try
+            {
+                conn.Open();
+                comando.ExecuteNonQuery();
+                //conn.Close();
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception("Houve um problema na gravação dos dados!" + e);
+            }
+
+            finally
+            {
+                conn.Close();
+            }
+            return null;
+
+        }
+
+
+
+
     }
 }

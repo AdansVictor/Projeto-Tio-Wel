@@ -8,9 +8,9 @@ namespace Web.Controller.Controller
 {
     public class PedidoController
     {
-        public Pedidos InserirPedido(string nome, string Pedido, string ValTot, string QuantPed)
+        public Pedidos InserirPedido(string nomecli, string descprod,string QuantProd)
         {
-            return null;/*new PedidoDB().InserirPedido(nome, Pedido, ValTot, QuantPed);*/
+            return new PedidoDB().InserirPedido(nomecli,descprod,QuantProd);
         }
         public PedidoController() { }
     }

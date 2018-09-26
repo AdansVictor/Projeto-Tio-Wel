@@ -21,9 +21,9 @@ namespace WebApplication1.ProjetoLanchonete
             string produto = prodCad.Text;
             string categoria = txtProd.Text;
             string valor = txtVal.Text;
-            string QtdProd = txtQtd.Text;
+            string QuantProd = txtQtd.Text;
 
-            Produtos gravarproduto = new ProdutoController().InserirProduto(produto, categoria, valor,QtdProd);
+            Produtos gravarproduto = new ProdutoController().InserirProduto(produto, categoria, valor, QuantProd);
 
             resultado.Text = "Seu Produto foi registrado com sucesso";
 

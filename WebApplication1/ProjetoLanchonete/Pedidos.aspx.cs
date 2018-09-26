@@ -54,6 +54,19 @@ namespace WebApplication1.ProjetoLanchonete
                     //Response.Write("Index =" + ListBox1.Items.IndexOf(li).ToString() + "<br>");
                     //Response.Write("----------------------------------------");
 
+                }
+
+                //resultProd. InnerHtml = gridProd.ToString();
+
+
+                if (ListBox1.SelectedIndex == -1)
+                {
+                    label1.ForeColor = System.Drawing.Color.Red;
+                }
+                else
+                {
+                    label1.ForeColor = System.Drawing.Color.Black;
+                }
 
 
 
@@ -62,8 +75,36 @@ namespace WebApplication1.ProjetoLanchonete
 
 
 
+                List<Clientes> ConsultaCli = new ClienteController().ConsultaCliente();
+
+                //StringBuilder gridProd = new StringBuilder();
+
+                foreach (var cli in ConsultaCli)
+                {
+                    ListItem item = new ListItem();
+                    item.Text = cli.NomeCompleto;
+                    item.Value = cli.IdUser.ToString();
+
+                    //ArrayList values = new ArrayList();
+
+                    ListBox2.Items.Add(item);
 
 
+
+                    //ListBox1.DataTextField = ("DescProduto");
+                    //ListBox1.DataValueField = "IdProd";
+
+
+
+
+                    //gridProd.Append("<tr>");
+                    //gridProd.Append(string.Format("<td>{0}</td>", produto.IdProd));
+                    //gridProd.Append(string.Format("<td>{0}</td>", produto.DescProduto));
+                    //gridProd.Append("</tr>");
+                    //Response.Write("Value=" + Convert.ToString(produto.IdProd) + "<br>");
+                    //Response.Write("Text =" + produto.DescProduto + "<br>");
+                    //Response.Write("Index =" + ListBox1.Items.IndexOf(li).ToString() + "<br>");
+                    //Response.Write("----------------------------------------");
 
                 }
 
@@ -78,6 +119,22 @@ namespace WebApplication1.ProjetoLanchonete
                 {
                     label1.ForeColor = System.Drawing.Color.Black;
                 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             }
         }
 
@@ -91,10 +148,24 @@ namespace WebApplication1.ProjetoLanchonete
 
             Valitem.Text = prod.ValorProduto;
         }
+
+        protected void ListBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Clientes cli = new ClienteController().ConsultaClientes(ListBox2.SelectedItem.Value);
+            Valcli.Text = cli.NomeCompleto;
+        }
+
+        protected void btnPed_Click(object sender, EventArgs e)
+        {
+            string descprod = ListBox1.Text;
+            string nomecli = ListBox2.Text;
+            //string QuantProd = QuantProd.text;
+
+
+            //Pedidos gravarpedido = new PedidoController().InserirPedido(nomecli, descprod, QuantProd);
+
+            //resultado.Text = "Seu Pedido foi registrado com sucesso";
+        }
     }
 
-    //void btnGravar_Click(object sender, EventArgs e)
-    //{
-
-    //}
 }

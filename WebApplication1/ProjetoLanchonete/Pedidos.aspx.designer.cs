@@ -58,22 +58,22 @@ namespace WebApplication1.ProjetoLanchonete {
         protected global::System.Web.UI.WebControls.ListItem resultProd;
         
         /// <summary>
-        /// Valitem control.
+        /// ListBox2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Valitem;
+        protected global::System.Web.UI.WebControls.ListBox ListBox2;
         
         /// <summary>
-        /// CodCli control.
+        /// resultCli control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CodCli;
+        protected global::System.Web.UI.WebControls.ListItem resultCli;
         
         /// <summary>
         /// Valcli control.
@@ -85,13 +85,31 @@ namespace WebApplication1.ProjetoLanchonete {
         protected global::System.Web.UI.WebControls.TextBox Valcli;
         
         /// <summary>
-        /// label1 control.
+        /// Valitem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label1;
+        protected global::System.Web.UI.WebControls.TextBox Valitem;
+        
+        /// <summary>
+        /// QuantProd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox QuantProd;
+        
+        /// <summary>
+        /// btnPed control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnPed;
         
         /// <summary>
         /// resultado control.
@@ -101,5 +119,14 @@ namespace WebApplication1.ProjetoLanchonete {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox resultado;
+        
+        /// <summary>
+        /// label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label1;
     }
 }

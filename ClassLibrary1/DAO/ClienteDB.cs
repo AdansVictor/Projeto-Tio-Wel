@@ -71,5 +71,37 @@ namespace Web.Controller.DAO
             conn.Close();
             return lstCliente;
         }
+
+
+        //retorna o cliente selecionado
+        internal Clientes ConsultaClientes(string Id)
+        {
+            Clientes cli = new Clientes();
+            SqlConnection conn = new SqlConnection(conecta);
+
+            string sql = "Select NomeCompleto from Clientes where IdUser = @IdUser";
+
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.Add(new SqlParameter("@IdUser", Id));
+            conn.Open();
+
+            SqlDataReader leitor = cmd.ExecuteReader();
+
+            while (leitor.Read())
+
+            {
+                //Precisa finalizar a linha com .ToString
+
+
+                //Produtos.IdProd = Convert.ToInt32(leitor["IdProd"].ToString());
+                cli.NomeCompleto = leitor["NomeCompleto"].ToString();
+            }
+
+            conn.Close();
+
+            return cli;
+
+        }
+
     }
 }
