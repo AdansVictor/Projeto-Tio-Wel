@@ -86,6 +86,8 @@ namespace WebApplication1.ProjetoLanchonete
             TextBox1.Text = "Seu Produto foi Adicionado com sucesso";
 
 
+            List<Produtos> ConsultaProd = new ProdutoController().ConsultaProdutos();
+
 
         }
 

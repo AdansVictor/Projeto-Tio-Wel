@@ -208,6 +208,9 @@
     <Content Include="img\dd.jpeg" />
     <Content Include="img\ee.jpeg" />
     <Content Include="img\favicon.png" />
+    <Content Include="img\gg.jpeg" />
+    <Content Include="img\head.jpeg" />
+    <Content Include="img\hh.jpeg" />
     <Content Include="img\jumbotron1.jpg" />
     <Content Include="img\lightbox\close.png" />
     <Content Include="img\lightbox\loading.gif" />
@@ -300,6 +303,7 @@
     <Content Include="ProjetoLanchonete\CadastraProduto.aspx" />
     <Content Include="ProjetoLanchonete\CadastroCliente.aspx" />
     <Content Include="ProjetoLanchonete\ConsultaCliente.aspx" />
+    <Content Include="ProjetoLanchonete\ConsultaPedido.aspx" />
     <Content Include="ProjetoLanchonete\ConsultaProduto.aspx" />
     <Content Include="ProjetoLanchonete\Pedidos.aspx" />
     <Content Include="ProjetoLanchonete\ProdutoDetalhe.aspx" />
@@ -336,6 +340,13 @@
     </Compile>
     <Compile Include="ProjetoLanchonete\ConsultaCliente.aspx.designer.cs">
       <DependentUpon>ConsultaCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetoLanchonete\ConsultaPedido.aspx.cs">
+      <DependentUpon>ConsultaPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjetoLanchonete\ConsultaPedido.aspx.designer.cs">
+      <DependentUpon>ConsultaPedido.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProjetoLanchonete\ConsultaProduto.aspx.cs">
       <DependentUpon>ConsultaProduto.aspx</DependentUpon>

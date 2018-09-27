@@ -28,6 +28,9 @@ namespace WebApplication1.ProjetoLanchonete
 
             nomeComp.Text = "";
             txtcpf.Text = "";
+            txtEndereco.Text = "";
+            txtTel.Text = "";
+            txtNac.Text = "";
         }
     }
 }

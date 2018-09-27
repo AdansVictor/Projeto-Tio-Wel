@@ -46,7 +46,7 @@ namespace Web.Controller.DAO
             List<Clientes> lstCliente = new List<Clientes>();
             SqlConnection conn = new SqlConnection(conecta);
 
-            string sql = "Select * From Clientes";
+            string sql = "Select * From Clientes order by NomeCompleto";
 
 
             SqlCommand cmd = new SqlCommand(sql, conn);

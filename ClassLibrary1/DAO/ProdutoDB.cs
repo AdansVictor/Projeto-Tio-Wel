@@ -47,7 +47,7 @@ namespace Web.Controller.DAO
             List<Produtos> lstProdutos = new List<Produtos>();
             SqlConnection conn = new SqlConnection(conecta);
 
-            string sql = "Select * from Produtos";
+            string sql = "Select * from Produtos order by DescProduto";
 
             SqlCommand cmd = new SqlCommand(sql, conn);
 

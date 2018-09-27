@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Pedidos.aspx.cs" Inherits="WebApplication1.ProjetoLanchonete.Pedidos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ConsultaPedido.aspx.cs" Inherits="WebApplication1.ProjetoLanchonete.ConsultaPedido" %>
 
 <!DOCTYPE html>
 
@@ -31,8 +31,8 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <body class="home">
-
-    <!-- navbar-->
+  
+  <!-- navbar-->
     <header class="header">
         <div role="navigation" class="navbar navbar-default">
             <div class="container">
@@ -94,81 +94,14 @@
         </div>
     </div>
     <section style="background-image: url('../img/10.jpeg');" class="item">
-
-
-        <%--Lista Pedidos--%>
-        <div class="row">
-
-            <div class="container">
-                <div class="col-md12">
-                    <form id="form1" runat="server">
-                        <div class="campos" id="campos" runat="server">
-                            <div class="form" id="form" runat="server">
-                                <h1 class="fa-font super-heading">Escolha seu Produto</h1>                         
-                            </div>
-                            <%--ESCOLHER PRODUTO--%>
-                            <div class ="form-group">
-                            <asp:ListBox CssClass="form-control" ID="ListBox1" runat="server" SelectionMode="Multiple" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged1" AutoPostBack="true">
-                                <asp:ListItem CssClass="form-control" id="resultProd" runat="server"></asp:ListItem>
-                            </asp:ListBox>
-                           </div>
-                            <br />
-
-                            <%--ESCOLHER QUANTIDADE DO PRODUTO--%>
-                 <%--           <asp:TextBox runat="server" ID="txtQuantidade" placeholder="Quantidade do Produto" />--%>
-
-
-
-
-
-                            <%--ESCOLHER CLIENTE--%>
-                            <div class ="form-group">
-                            <asp:ListBox CssClass="form-control" ID="ListBox2" runat="server" SelectionMode="Single" OnSelectedIndexChanged="ListBox2_SelectedIndexChanged" AutoPostBack="true">
-                                <asp:ListItem CssClass="form-control" id="resultCli" runat="server"></asp:ListItem>
-                            </asp:ListBox>
-                            </div>
-                            <br />
-
-                               <%-- <div class="form-group">
-                                <label>Digite seu CPF:</label><asp:TextBox CssClass="form-control" runat="server" ID="QuantProd" />
-                                </div>--%>
-
-                            <asp:TextBox CssClass="form-control" placeholder="Nome do Cliente" runat="server" AutoPostBack="true" ID="Valcli" />
-                            <br />
-                            <asp:TextBox CssClass="form-control" placeholder="Valor" runat="server"  ID="Valitem" />
-                            <br />
-                            <asp:TextBox CssClass="form-control" placeholder="Quantidade de Produtos" runat="server" AutoPostBack="true" ID="QuantidadeProduto" />
-                            <br />
-                            <asp:Button ID="btnPed" runat="server" CssClass="btn btn-success" OnClick="btnPed_Click" Text="Gravar pedido" />
-                           <br />
-                            <%--            <p>Digite o código do cliente:<asp:TextBox CssClass="form-control" runat="server" id="CodCli"/></p>
-            <p>Nome do Cliente:<asp:TextBox CssClass="form-control"   runat ="server" autopostback="true" id="Valcli"/>--%>
-
-                            <br />
-                            <asp:Label CssClass="form-control" ID="label1" Font-Bold="true" runat="server"></asp:Label>
-                            
-                            <%--<asp:Button ID="btnGravar" runat ="server" OnClick="btnGravar_Click" Text="Gravar Pedido" />--%>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-    </section>
+ </section>
     <section class="section--padding-bottom-small">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
                     <div class="post">
                         <div class="image"><a href="text.html">
-                            <img src="../img/8.jpeg" alt="" class="img-responsive" /></a></div>
+                            <img src="../img/10.jpeg" alt="" class="img-responsive" /></a></div>
                         <h3><a href="text.html">Grandes</a></h3>
                         <p class="post__intro">Outro prato muito popular no Reino Unido, o Bangers and Mash é um prato feito com salsichas e purê de batata. Vários tipos diferentes de salsicha podem ser escolhidos, como a de porco, e de porco com maçã, a salsicha de Lincolnshire ou a salsicha de Cumberland. Ele também costuma ser ser servido com molho de cebolas, principalmente no inverno. É popular nos pubs ingleses por ser de fácil e rápida preparação.</p>
                         <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue Lendo   </a></p>
@@ -217,6 +150,37 @@
     </section>
 
 
+
+            <%--Listar Pedidos--%>
+                        
+
+
+<div class="row">
+
+ <div class ="container">
+    <div class ="col-md12">
+     <form id="form1" runat="server">
+            <br />
+     <table class ="table table-hover">
+     <thead>
+         <tr>
+         <th>Nome do Cliente </th>
+         <th>Descrição do Produto</th>
+         <th>Total</th>
+         <th>Data de Cadastro</th>
+         </tr>
+        <asp:TextBox  CssClass="form-control" placeholder="Qual Produto você quer excluir?" Width="250px" runat="server" id="prodCad"/>
+                
+          <asp:Button ID="btnDeletar" CssClass="btn btn-danger" runat="server" Text="Deletar Produto" OnClick="btnDeletar_Click" />
+          <asp:TextBox runat="server"  CssClass="form-control" placeholder="Produto Deletado" id="resultado" Width="250px"/>
+      </thead>
+      <tbody id="resultProd" runat="server"></tbody>
+      </table>
+         </form>
+   </div>
+    
+ </div>
+    </div>
 
 
 
@@ -284,7 +248,7 @@
 
 
 
-  <!-- portfolio-->
+    <!-- portfolio-->
     <section id="portfolio" class="section--no-padding-bottom">
         <div class="container">
             <div class="row">
@@ -305,16 +269,16 @@
                         <img src="../img/2.jpeg" alt="" class="img-responsive" /></a></div>
                 </div>
                 <div class="col-lg-3 col-sm-4 col-xs-6">
-                    <div class="box"><a href="../img/gg.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 3">
-                        <img src="../img/gg.jpeg" alt="" class="img-responsive" /></a></div>
+                    <div class="box"><a href="../img/1.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 3">
+                        <img src="../img/1.jpeg" alt="" class="img-responsive" /></a></div>
                 </div>
                 <div class="col-lg-3 col-sm-4 col-xs-6">
                     <div class="box"><a href="../img/4.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 4">
                         <img src="../img/4.jpeg" alt="" class="img-responsive" /></a></div>
                 </div>
                 <div class="col-lg-3 col-sm-4 col-xs-6">
-                    <div class="box"><a href="../img/head.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 5">
-                        <img src="../img/head.jpeg" alt="" class="img-responsive" /></a></div>
+                    <div class="box"><a href="../img/5.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 5">
+                        <img src="../img/5.jpeg" alt="" class="img-responsive" /></a></div>
                 </div>
                 <div class="col-lg-3 col-sm-4 col-xs-6">
                     <div class="box"><a href="../img/7.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 6">
@@ -325,13 +289,12 @@
                         <img src="../img/8.jpeg" alt="" class="img-responsive" /></a></div>
                 </div>
                 <div class="col-lg-3 col-sm-4 col-xs-6">
-                    <div class="box"><a href="../img/6.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 8">
-                        <img src="../img/6.jpg" alt="" class="img-responsive" /></a></div>
+                    <div class="box"><a href="../img/1.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 8">
+                        <img src="../img/1.jpeg" alt="" class="img-responsive" /></a></div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <footer class="footer">
         <div class="footer__copyright">
@@ -370,15 +333,4 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
 

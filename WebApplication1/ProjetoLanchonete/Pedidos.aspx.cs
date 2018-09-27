@@ -157,12 +157,16 @@ namespace WebApplication1.ProjetoLanchonete
 
         protected void btnPed_Click(object sender, EventArgs e)
         {
-            string descprod = ListBox1.Text;
-            string nomecli = ListBox2.Text;
-            //string QuantProd = QuantProd.text;
+            string IdCli = ListBox2.SelectedItem.Value;
+            string IdProd = ListBox1.SelectedItem.Value;
+            string QuantProd = QuantidadeProduto.Text;
+            string ValorProduto = Valitem.Text;
 
 
-            //Pedidos gravarpedido = new PedidoController().InserirPedido(nomecli, descprod, QuantProd);
+            //Pedidos gravarproduto = new PedidoController().InserirPedido(IdCli, IdProd, QuantProd, ValorProduto);
+
+
+
 
             //resultado.Text = "Seu Pedido foi registrado com sucesso";
         }

@@ -44,14 +44,15 @@ namespace Web.Controller.DAO
 
 
 
-        internal Pedidos InserirPedido(string nomecli, string descprod,string QuantProd)
+        internal Pedidos InserirPedido(string IdCli, string IdProd,string QuantProd,string ValorProduto)
         {
             SqlConnection conn = new SqlConnection(conecta);
-            string sqlQuery = "INSERT INTO Pedidos (nomecli,descprod,QuantProd)VALUES(@nomecli,@descprod,@QuantProd)";
+            string sqlQuery = "INSERT INTO Pedidos (IdCli,IdProd,QuantProd,ValorProduto)VALUES(@IdCli,@IdProd,@QuantProd,@ValorProduto)";
             SqlCommand comando = new SqlCommand(sqlQuery, conn);
-            comando.Parameters.Add(new SqlParameter("@nomecli", nomecli));
-            comando.Parameters.Add(new SqlParameter("@descprod", descprod));
+            comando.Parameters.Add(new SqlParameter("@IdCli", IdCli));
+            comando.Parameters.Add(new SqlParameter("@IdProd", IdProd));
             comando.Parameters.Add(new SqlParameter("@QuantProd", QuantProd));
+            comando.Parameters.Add(new SqlParameter("@ValorProduto", ValorProduto));
 
             try
             {
@@ -73,6 +74,10 @@ namespace Web.Controller.DAO
 
         }
 
+
+
+
+        
 
 
 

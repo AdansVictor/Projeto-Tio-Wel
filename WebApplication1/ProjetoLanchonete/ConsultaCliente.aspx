@@ -134,45 +134,54 @@
 
 
 
-            <!-- portfolio-->
+   <!-- portfolio-->
     <section id="portfolio" class="section--no-padding-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1>Nossos Produtos</h1>
-            <p class="lead margin-bottom--big">Venha nos visitar.</p>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Nossos Produtos</h1>
+                    <p class="lead margin-bottom--big">Venha nos visitar.</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row no-space">
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="../img/1.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 1"><img src="../img/1.jpeg" alt="" class="img-responsive" /></a></div>
-          </div>
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="../img/2.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 2"><img src="../img/2.jpeg" alt="" class="img-responsive" /></a></div>
-          </div>
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="../img/1.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 3"><img src="../img/1.jpeg" alt="" class="img-responsive" /></a></div>
-          </div>
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="../img/4.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 4"><img src="../img/4.jpeg" alt="" class="img-responsive" /></a></div>
-          </div>
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="../img/5.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 5"><img src="../img/5.jpeg" alt="" class="img-responsive" /></a></div>
-          </div>
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="../img/7.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 6"><img src="../img/7.jpg" alt="" class="img-responsive" /></a></div>
-          </div>
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="../img/8.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 7"><img src="../img/8.jpeg" alt="" class="img-responsive" /></a></div>
-          </div>
-          <div class="col-lg-3 col-sm-4 col-xs-6">
-            <div class="box"><a href="../img/1.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 8"><img src="../img/1.jpeg" alt="" class="img-responsive" /></a></div>
-          </div>
+        <div class="container-fluid">
+            <div class="row no-space">
+                <div class="col-lg-3 col-sm-4 col-xs-6">
+                    <div class="box"><a href="../img/1.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 1">
+                        <img src="../img/1.jpeg" alt="" class="img-responsive" /></a></div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-6">
+                    <div class="box"><a href="../img/2.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 2">
+                        <img src="../img/2.jpeg" alt="" class="img-responsive" /></a></div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-6">
+                    <div class="box"><a href="../img/gg.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 3">
+                        <img src="../img/gg.jpeg" alt="" class="img-responsive" /></a></div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-6">
+                    <div class="box"><a href="../img/4.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 4">
+                        <img src="../img/4.jpeg" alt="" class="img-responsive" /></a></div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-6">
+                    <div class="box"><a href="../img/head.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 5">
+                        <img src="../img/head.jpeg" alt="" class="img-responsive" /></a></div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-6">
+                    <div class="box"><a href="../img/7.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 6">
+                        <img src="../img/7.jpg" alt="" class="img-responsive" /></a></div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-6">
+                    <div class="box"><a href="../img/8.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 7">
+                        <img src="../img/8.jpeg" alt="" class="img-responsive" /></a></div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-6">
+                    <div class="box"><a href="../img/6.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 8">
+                        <img src="../img/6.jpg" alt="" class="img-responsive" /></a></div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
+
 
           <footer class="footer">
       <div class="footer__copyright">

@@ -27,6 +27,12 @@ namespace WebApplication1.ProjetoLanchonete
 
             resultado.Text = "Seu Produto foi registrado com sucesso";
 
+
+            prodCad.Text = "";
+            txtProd.Text = "";
+            txtVal.Text = "";
+            txtQtd.Text = "";
+
         }
 
         

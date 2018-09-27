@@ -94,13 +94,13 @@ namespace WebApplication1.ProjetoLanchonete {
         protected global::System.Web.UI.WebControls.TextBox Valitem;
         
         /// <summary>
-        /// QuantProd control.
+        /// QuantidadeProduto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox QuantProd;
+        protected global::System.Web.UI.WebControls.TextBox QuantidadeProduto;
         
         /// <summary>
         /// btnPed control.
@@ -110,15 +110,6 @@ namespace WebApplication1.ProjetoLanchonete {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnPed;
-        
-        /// <summary>
-        /// resultado control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox resultado;
         
         /// <summary>
         /// label1 control.
