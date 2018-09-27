@@ -52,6 +52,23 @@ namespace Web.Controller.Model
             set { _ValorProduto = value; }
         }
 
+        private decimal _ValDev;
+
+        public decimal ValDev
+        {
+            get { return _ValDev; }
+            set { _ValDev = value; }
+        }
+
+
+        private decimal _ValTotDev;
+
+        public decimal ValTotDev
+        {
+            get { return _ValTotDev; }
+            set { _ValTotDev = value; }
+        }
+
 
         private DateTime _DataCadastro;
 

@@ -54,6 +54,8 @@ namespace WebApplication1.ProjetoLanchonete
                     //Response.Write("Index =" + ListBox1.Items.IndexOf(li).ToString() + "<br>");
                     //Response.Write("----------------------------------------");
 
+
+
                 }
 
                 //resultProd. InnerHtml = gridProd.ToString();
@@ -67,7 +69,6 @@ namespace WebApplication1.ProjetoLanchonete
                 {
                     label1.ForeColor = System.Drawing.Color.Black;
                 }
-
 
 
 
@@ -157,18 +158,28 @@ namespace WebApplication1.ProjetoLanchonete
 
         protected void btnPed_Click(object sender, EventArgs e)
         {
+
             string IdCli = ListBox2.SelectedItem.Value;
             string IdProd = ListBox1.SelectedItem.Value;
             string QuantProd = QuantidadeProduto.Text;
             string ValorProduto = Valitem.Text;
-
-
-            //Pedidos gravarproduto = new PedidoController().InserirPedido(IdCli, IdProd, QuantProd, ValorProduto);
-
+            decimal ValDev = Convert.ToDecimal(QuantProd)*Convert.ToDecimal(ValorProduto);
 
 
 
-            //resultado.Text = "Seu Pedido foi registrado com sucesso";
+            var gravarproduto = new PedidoController().InserirPedido(IdCli, IdProd, QuantProd, ValorProduto, ValDev);
+
+
+
+
+            label1.Text = "Seus Pedido foi realizado com Sucesso";
+
+
+            ListBox2.SelectedItem.Value = "";
+            ListBox1.SelectedItem.Value = "";
+            QuantidadeProduto.Text = "";
+            Valitem.Text = "";
+
         }
     }
 

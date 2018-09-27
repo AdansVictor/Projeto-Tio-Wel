@@ -140,12 +140,13 @@
                             <asp:TextBox CssClass="form-control" placeholder="Quantidade de Produtos" runat="server" AutoPostBack="true" ID="QuantidadeProduto" />
                             <br />
                             <asp:Button ID="btnPed" runat="server" CssClass="btn btn-success" OnClick="btnPed_Click" Text="Gravar pedido" />
+                           
                            <br />
                             <%--            <p>Digite o código do cliente:<asp:TextBox CssClass="form-control" runat="server" id="CodCli"/></p>
             <p>Nome do Cliente:<asp:TextBox CssClass="form-control"   runat ="server" autopostback="true" id="Valcli"/>--%>
 
                             <br />
-                            <asp:Label CssClass="form-control" ID="label1" Font-Bold="true" runat="server"></asp:Label>
+                            <asp:Label CssClass="form-control" placeholder="Resultado do Cadastro do pedido" ID="label1" Font-Bold="true" runat="server"></asp:Label>
                             
                             <%--<asp:Button ID="btnGravar" runat ="server" OnClick="btnGravar_Click" Text="Gravar Pedido" />--%>
                         </div>

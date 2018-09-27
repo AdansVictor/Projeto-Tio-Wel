@@ -44,15 +44,16 @@ namespace Web.Controller.DAO
 
 
 
-        internal Pedidos InserirPedido(string IdCli, string IdProd,string QuantProd,string ValorProduto)
+        internal Pedidos InserirPedido(string IdCli, string IdProd,string QuantProd,string ValorProduto, decimal ValDev)
         {
             SqlConnection conn = new SqlConnection(conecta);
-            string sqlQuery = "INSERT INTO Pedidos (IdCli,IdProd,QuantProd,ValorProduto)VALUES(@IdCli,@IdProd,@QuantProd,@ValorProduto)";
+            string sqlQuery = "INSERT INTO Pedidos (IdCli,IdProd,QuantProd,ValorProduto,ValDev)VALUES(@IdCli,@IdProd,@QuantProd,@ValorProduto,@ValDev)";
             SqlCommand comando = new SqlCommand(sqlQuery, conn);
-            comando.Parameters.Add(new SqlParameter("@IdCli", IdCli));
-            comando.Parameters.Add(new SqlParameter("@IdProd", IdProd));
-            comando.Parameters.Add(new SqlParameter("@QuantProd", QuantProd));
-            comando.Parameters.Add(new SqlParameter("@ValorProduto", ValorProduto));
+            comando.Parameters.Add(new SqlParameter("@IdCli", Convert.ToInt32 (IdCli)));
+            comando.Parameters.Add(new SqlParameter("@IdProd", Convert.ToInt32 (IdProd)));
+            comando.Parameters.Add(new SqlParameter("@QuantProd", Convert.ToInt32 (QuantProd)));
+            comando.Parameters.Add(new SqlParameter("@ValorProduto", Convert.ToDecimal (ValorProduto)));
+            comando.Parameters.Add(new SqlParameter("@ValDev", Convert.ToDecimal(ValDev)));
 
             try
             {
@@ -76,8 +77,41 @@ namespace Web.Controller.DAO
 
 
 
+        internal List<Pedidos> ConsultaPedidos()
+        {
 
-        
+            List<Pedidos> lstPedidos = new List<Pedidos>();
+            SqlConnection conn = new SqlConnection(conecta);
+
+            string sql = "Select * from Pedidos order by IdCli";
+
+            SqlCommand cmd = new SqlCommand(sql, conn);
+
+            conn.Open();
+
+            SqlDataReader leitor = cmd.ExecuteReader();
+
+            while (leitor.Read())
+            {
+                //Precisa finalizar a linha com .ToString
+
+                Pedidos pedidos = new Pedidos();
+                pedidos.IdPed = Convert.ToInt32(leitor["IdPed"].ToString());
+                pedidos.IdCli = leitor["IdCli"].ToString();
+                pedidos.IdProd = leitor["IdProd"].ToString();
+                pedidos.ValDev = Convert.ToDecimal( leitor["ValDev"].ToString());
+                pedidos.ValTotDev = Convert.ToDecimal (leitor["ValTotDev"].ToString());
+                pedidos.DataCadastro = Convert.ToDateTime(leitor["DataCadastro"].ToString());
+
+                lstPedidos.Add(pedidos);
+            }
+
+            conn.Close();
+
+            return lstPedidos;
+
+        }
+
 
 
 

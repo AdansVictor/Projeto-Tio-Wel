@@ -31,8 +31,8 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <body class="home">
-  
-  <!-- navbar-->
+
+    <!-- navbar-->
     <header class="header">
         <div role="navigation" class="navbar navbar-default">
             <div class="container">
@@ -94,14 +94,72 @@
         </div>
     </div>
     <section style="background-image: url('../img/10.jpeg');" class="item">
- </section>
+
+
+
+
+
+        <%--Listar Pedidos--%>
+
+
+
+        <%--Lista Pedidos--%>
+        <div class="row">
+
+            <div class="container">
+                <div class="col-md12">
+                    <form id="form1" runat="server">
+                        <div class="campos" id="campos" runat="server">
+                            <div class="form" id="form" runat="server">
+                                <h1 class="fa-font super-heading">Selecione o Cliente</h1>
+                            </div>
+                            <%--Pedido--%>
+                            <div class="form-group">
+                                <asp:ListBox CssClass="form-control" ID="ListBox1" runat="server" SelectionMode="Multiple" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" AutoPostBack="true" >
+                                    <asp:ListItem CssClass="form-control" id="resultped" runat="server"></asp:ListItem>
+                                </asp:ListBox>
+                            </div>
+                            <br />
+
+                            <asp:listview CssClass="form-control" ID="ListView" runat="server" >
+
+                            </asp:listview>
+                     
+                            <br />
+
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
     <section class="section--padding-bottom-small">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
                     <div class="post">
-                        <div class="image"><a href="text.html">
-                            <img src="../img/10.jpeg" alt="" class="img-responsive" /></a></div>
+                        <div class="image">
+                            <a href="text.html">
+                                <img src="../img/10.jpeg" alt="" class="img-responsive" /></a>
+                        </div>
                         <h3><a href="text.html">Grandes</a></h3>
                         <p class="post__intro">Outro prato muito popular no Reino Unido, o Bangers and Mash é um prato feito com salsichas e purê de batata. Vários tipos diferentes de salsicha podem ser escolhidos, como a de porco, e de porco com maçã, a salsicha de Lincolnshire ou a salsicha de Cumberland. Ele também costuma ser ser servido com molho de cebolas, principalmente no inverno. É popular nos pubs ingleses por ser de fácil e rápida preparação.</p>
                         <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue Lendo   </a></p>
@@ -109,8 +167,10 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="post">
-                        <div class="image"><a href="text.html">
-                            <img src="../img/7.jpg" alt="" class="img-responsive" /></a></div>
+                        <div class="image">
+                            <a href="text.html">
+                                <img src="../img/7.jpg" alt="" class="img-responsive" /></a>
+                        </div>
                         <h3><a href="text.html">Delicias</a></h3>
                         <p class="post__intro">Durante décadas foi o prato mais pedido das prefeitas da Inglaterra, e acabou se popularizando também em países como Nova Zelândia, Canadá, Irlanda e na África do Sul. No Brasil o fish ‘n’ chips também vem se popularizando nos últimos anos. Em Curitiba, por exemplo, vários bares, food trucks e lanchonetes de rua adotaram o prato típico em seus menus.</p>
                         <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue Lendo   </a></p>
@@ -120,8 +180,10 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="post">
-                        <div class="image"><a href="text.html">
-                            <img src="../img/5.jpeg" alt="" class="img-responsive" /></a></div>
+                        <div class="image">
+                            <a href="text.html">
+                                <img src="../img/5.jpeg" alt="" class="img-responsive" /></a>
+                        </div>
                         <h3><a href="text.html">Rit eget tincidunt condimentum</a></h3>
                         <p class="post__intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                         <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue Lendo     </a></p>
@@ -129,8 +191,10 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="post">
-                        <div class="image"><a href="text.html">
-                            <img src="../img/1.jpeg" alt="" class="img-responsive" /></a></div>
+                        <div class="image">
+                            <a href="text.html">
+                                <img src="../img/1.jpeg" alt="" class="img-responsive" /></a>
+                        </div>
                         <h3><a href="text.html">Tempor sit amet</a></h3>
                         <p class="post__intro">Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
                         <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue Lendo     </a></p>
@@ -138,8 +202,10 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="post">
-                        <div class="image"><a href="text.html">
-                            <img src="../img/aa.jpeg" alt="" class="img-responsive" /></a></div>
+                        <div class="image">
+                            <a href="text.html">
+                                <img src="../img/aa.jpeg" alt="" class="img-responsive" /></a>
+                        </div>
                         <h3><a href="text.html">Vestibulum erat wisi</a></h3>
                         <p class="post__intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                         <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue Lendo     </a></p>
@@ -151,36 +217,7 @@
 
 
 
-            <%--Listar Pedidos--%>
-                        
 
-
-<div class="row">
-
- <div class ="container">
-    <div class ="col-md12">
-     <form id="form1" runat="server">
-            <br />
-     <table class ="table table-hover">
-     <thead>
-         <tr>
-         <th>Nome do Cliente </th>
-         <th>Descrição do Produto</th>
-         <th>Total</th>
-         <th>Data de Cadastro</th>
-         </tr>
-        <asp:TextBox  CssClass="form-control" placeholder="Qual Produto você quer excluir?" Width="250px" runat="server" id="prodCad"/>
-                
-          <asp:Button ID="btnDeletar" CssClass="btn btn-danger" runat="server" Text="Deletar Produto" OnClick="btnDeletar_Click" />
-          <asp:TextBox runat="server"  CssClass="form-control" placeholder="Produto Deletado" id="resultado" Width="250px"/>
-      </thead>
-      <tbody id="resultProd" runat="server"></tbody>
-      </table>
-         </form>
-   </div>
-    
- </div>
-    </div>
 
 
 
@@ -261,36 +298,52 @@
         <div class="container-fluid">
             <div class="row no-space">
                 <div class="col-lg-3 col-sm-4 col-xs-6">
-                    <div class="box"><a href="../img/1.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 1">
-                        <img src="../img/1.jpeg" alt="" class="img-responsive" /></a></div>
+                    <div class="box">
+                        <a href="../img/1.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 1">
+                            <img src="../img/1.jpeg" alt="" class="img-responsive" /></a>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-sm-4 col-xs-6">
-                    <div class="box"><a href="../img/2.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 2">
-                        <img src="../img/2.jpeg" alt="" class="img-responsive" /></a></div>
+                    <div class="box">
+                        <a href="../img/2.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 2">
+                            <img src="../img/2.jpeg" alt="" class="img-responsive" /></a>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-sm-4 col-xs-6">
-                    <div class="box"><a href="../img/1.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 3">
-                        <img src="../img/1.jpeg" alt="" class="img-responsive" /></a></div>
+                    <div class="box">
+                        <a href="../img/1.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 3">
+                            <img src="../img/1.jpeg" alt="" class="img-responsive" /></a>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-sm-4 col-xs-6">
-                    <div class="box"><a href="../img/4.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 4">
-                        <img src="../img/4.jpeg" alt="" class="img-responsive" /></a></div>
+                    <div class="box">
+                        <a href="../img/4.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 4">
+                            <img src="../img/4.jpeg" alt="" class="img-responsive" /></a>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-sm-4 col-xs-6">
-                    <div class="box"><a href="../img/5.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 5">
-                        <img src="../img/5.jpeg" alt="" class="img-responsive" /></a></div>
+                    <div class="box">
+                        <a href="../img/5.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 5">
+                            <img src="../img/5.jpeg" alt="" class="img-responsive" /></a>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-sm-4 col-xs-6">
-                    <div class="box"><a href="../img/7.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 6">
-                        <img src="../img/7.jpg" alt="" class="img-responsive" /></a></div>
+                    <div class="box">
+                        <a href="../img/7.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 6">
+                            <img src="../img/7.jpg" alt="" class="img-responsive" /></a>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-sm-4 col-xs-6">
-                    <div class="box"><a href="../img/8.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 7">
-                        <img src="../img/8.jpeg" alt="" class="img-responsive" /></a></div>
+                    <div class="box">
+                        <a href="../img/8.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 7">
+                            <img src="../img/8.jpeg" alt="" class="img-responsive" /></a>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-sm-4 col-xs-6">
-                    <div class="box"><a href="../img/1.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 8">
-                        <img src="../img/1.jpeg" alt="" class="img-responsive" /></a></div>
+                    <div class="box">
+                        <a href="../img/1.jpeg" title="" data-lightbox="portfolio" data-title="Portfolio image 8">
+                            <img src="../img/1.jpeg" alt="" class="img-responsive" /></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -322,8 +375,8 @@
     <!---->
     <script>
         (function (b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l; b[l] || (b[l] =
-            function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+            b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+                function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
             e = o.createElement(i); r = o.getElementsByTagName(i)[0];
             e.src = '//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e, r)
