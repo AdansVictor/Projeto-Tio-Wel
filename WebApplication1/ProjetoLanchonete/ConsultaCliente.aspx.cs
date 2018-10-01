@@ -26,6 +26,7 @@ namespace WebApplication1.ProjetoLanchonete
                     gridCli.Append(String.Format("<td>{0}</td>", item.CPF));
                     gridCli.Append(String.Format("<td>{0}</td>", item.Ende));
                     gridCli.Append(String.Format("<td>{0}</td>", item.Tel));
+                    gridCli.Append(String.Format("<td>{0}</td>", item.Cred));
                     gridCli.Append(String.Format("<td>{0}</td>", item.DataNasc));
                     gridCli.Append(String.Format("<td>{0}</td>", item.DataCadastro));
                     gridCli.Append("</tr>");

@@ -16,23 +16,48 @@ namespace Web.Controller.Model
             set { _IdPed = value; }
         }
 
-        private string _IdCli;
+        private int _IdCli;
 
-        public string IdCli
+        public int IdCli
         {
             get { return _IdCli; }
             set { _IdCli = value; }
         }
 
-        private string _IdProd;
 
-        public string IdProd
+
+        private int _IdUser;
+        public int IdUser
+        {
+            get { return _IdUser; }
+            set { _IdUser = value; }
+        }
+
+        private string _NomeCompleto;
+
+        public string NomeCompleto
+        {
+            get { return _NomeCompleto; }
+            set { _NomeCompleto = value; }
+        }
+
+        private int _IdProd;
+
+        public int IdProd
         {
             get { return _IdProd; }
             set { _IdProd = value; }
         }
 
- 
+        private string _DescProduto;
+
+        public string DescProduto
+        {
+            get { return _DescProduto; }
+            set { _DescProduto = value; }
+        }
+
+
 
         private string _QuantProd;
 
@@ -52,12 +77,20 @@ namespace Web.Controller.Model
             set { _ValorProduto = value; }
         }
 
-        private decimal _ValDev;
+        private string _ValDev;
 
-        public decimal ValDev
+        public string ValDev
         {
             get { return _ValDev; }
             set { _ValDev = value; }
+        }
+
+
+        private string _ValPed;
+        public string ValPed
+        {
+            get { return _ValPed; }
+            set { _ValPed = value; }
         }
 
 
@@ -67,6 +100,15 @@ namespace Web.Controller.Model
         {
             get { return _ValTotDev; }
             set { _ValTotDev = value; }
+        }
+
+
+        private decimal _cred;
+
+        public decimal cred
+        {
+            get { return _cred; }
+            set { _cred = value; }
         }
 
 

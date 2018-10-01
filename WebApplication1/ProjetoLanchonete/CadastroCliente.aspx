@@ -55,6 +55,7 @@
                                 <li><a href="ConsultaProduto.aspx">Produtos</a></li>
                                 <li><a href="ConsultaCliente.aspx">Clientes</a></li>
                                 <li><a href="Pedidos.aspx">Faça Aqui Seu Pedido</a></li>
+                                <li><a href="ConsultaPedido.aspx">Consultar pedidos</a></li>
                             </ul>
                         </li>
                         <li><a href="CadastroCliente.aspx">Adcionar Clientes</a></li>
@@ -138,6 +139,11 @@
                     <div class="form-group">
                        <%-- <label>Digite seu Telefone:</label>--%>
                         <asp:TextBox placeholder="Digite Seu Telefone" runat="server" CssClass="form-control" ID="txtTel" />
+                    </div>
+
+                    <div class="form-group">
+                       <%-- <label>Digite o credito:</label>--%>
+                        <asp:TextBox placeholder="Cliente possui crédito?" runat="server" CssClass="form-control" ID="txtCred" />
                     </div>
 
 

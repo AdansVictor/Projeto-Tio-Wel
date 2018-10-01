@@ -21,36 +21,35 @@ namespace WebApplication1.ProjetoLanchonete
 
 
 
-                List<Pedidos> ListaPed = new PedidoController().ConsultaPedidos();
+                var ListaPed = new PedidoController().ConsultaPedidos();
 
 
                 foreach (var pedidos in ListaPed)
                 {
                     ListItem item = new ListItem();
-                    item.Text = pedidos.NomeCompleto;
-                    item.Value = pedidos.IdPed.ToString();
-                    item.Text = pedidos.DescProduto;
-                    item.Text = pedidos.ValDev.ToString();
-                    item.Text = pedidos.DescProduto;
-
-
+                    item.Value = pedidos.IdCli.ToString();
+                    item.Text = pedidos.NomeCompleto;                   
+                    
                     ListBox1.Items.Add(item);
-
-
-
-
-
+                    
                 }
-
-
-
-
             }
         }
 
         protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            var ped = new PedidoController().ConsultaPedidosVal(ListBox1.SelectedItem.Value);
+            Valped.Text = ped.ValDev;
         }
+
+        //protected void btnPagar_Click(object sender, EventArgs e)
+        //{
+        //    string valped = Valped.Text;
+        //    var Consulta = new ClienteController().ConsultaCliente();
+        //    string cred = item.Cred.Text;
+        //    decimal result = Convert.ToDecimal(cred) - Convert.ToDecimal(valped);
+
+        //    var gravarped = new PedidoController().PagarDeb(valped, cred, result);
+        //}
     }
 }

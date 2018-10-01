@@ -25,38 +25,42 @@
     <link rel="stylesheet" href="../css/custom.css" />
     <!-- Favicon-->
     <link rel="shortcut icon" href="../favicon.png" />
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-  </head>
+</head>
 <body class ="home">
 
 
-      <!-- navbar-->
+    <!-- navbar-->
     <header class="header">
-      <div role="navigation" class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header"><a href="../Index.aspx" class="navbar-brand">Lanchonete do Tio Wel</a>
-            <div class="navbar-buttons">
-              <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="fa fa-align-justify"></i></button>
+        <div role="navigation" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="../Index.aspx" class="navbar-brand">Lanchonete do Tio Wel</a>
+                    <div class="navbar-buttons">
+                        <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="fa fa-align-justify"></i></button>
+                    </div>
+                </div>
+                <div id="navigation" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="../Index.aspx">Home</a></li>
+                        <li><a href="/ProjetoLanchonete/ConsultaProduto.aspx">Produtos</a></li>
+                        <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Pedidos <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="ConsultaProduto.aspx">Produtos</a></li>
+                                <li><a href="ConsultaCliente.aspx">Clientes</a></li>
+                                <li><a href="Pedidos.aspx">Faça Aqui Seu Pedido</a></li>
+                                <li><a href="ConsultaPedido.aspx">Consultar pedidos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="CadastroCliente.aspx">Adcionar Clientes</a></li>
+                    </ul>
+                    <a href="#" data-toggle="modal" data-target="#login-modal" class="btn navbar-btn btn-white pull-left"><i class="fa fa-sign-in"></i>Log in</a>
+                </div>
             </div>
-          </div>
-          <div id="navigation" class="collapse navbar-collapse navbar-right">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="../Index.aspx">Home</a></li>
-              <li><a href="/ProjetoLanchonete/ConsultaProduto.aspx">Produtos</a></li>
-              <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Pedidos <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="ConsultaProduto.aspx">Produtos</a></li>
-                  <li><a href="ConsultaCliente.aspx">Clientes</a></li>
-                  <li><a href="Pedidos.aspx">Faça Aqui Seu Pedido</a></li>
-                </ul>
-              </li>
-              <li><a href="/ProjetoLanchonete/CadastroCliente.aspx">Adcionar Clientes</a></li>
-            </ul><a href="#" data-toggle="modal" data-target="#login-modal" class="btn navbar-btn btn-white pull-left"><i class="fa fa-sign-in"></i>Log in</a>
-          </div>
         </div>
-      </div>
     </header>
 
 
@@ -120,7 +124,8 @@
                     <th>CPF</th>
                     <th>Endereço</th>
                     <th>Telefone</th>
-                    <th>Data de nascimento</th>
+                    <th>Crédito do Cliente</th>
+                    <th>Data de Nascimento</th>
                     <th>Data de Cadastro</th>
                 </tr>
             </thead>

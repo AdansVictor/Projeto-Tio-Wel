@@ -8,9 +8,9 @@ namespace Web.Controller.Controller
 {
     public class ClienteController
     {
-        public Clientes InserirCliente(string nome, string cpf, string end, string tel, string datanasc)
+        public Clientes InserirCliente(string nome, string cpf, string end, string tel, string Cred, string datanasc)
         {
-            return new ClienteDB().InserirCliente(nome, cpf, end, tel, datanasc);
+            return new ClienteDB().InserirCliente(nome, cpf, end, tel, Cred, datanasc);
         }
         public ClienteController() { }
 
@@ -24,5 +24,6 @@ namespace Web.Controller.Controller
         {
             return new ClienteDB().ConsultaClientes(Id);
         }
+
     }
 }

@@ -20,9 +20,10 @@ namespace WebApplication1.ProjetoLanchonete
             string cpf = txtcpf.Text;
             string end = txtEndereco.Text;
             string tel = txtTel.Text;
+            string Cred = txtCred.Text;
             string datanasc = txtNac.Text;
 
-            Clientes gravarcliente = new ClienteController().InserirCliente(nome, cpf, end, tel, datanasc);
+            Clientes gravarcliente = new ClienteController().InserirCliente(nome, cpf, end, tel, Cred, datanasc);
 
             resultado.Text = "Seus Dados Foram Gravados";
 
@@ -30,6 +31,7 @@ namespace WebApplication1.ProjetoLanchonete
             txtcpf.Text = "";
             txtEndereco.Text = "";
             txtTel.Text = "";
+            txtCred.Text = "";
             txtNac.Text = "";
         }
     }

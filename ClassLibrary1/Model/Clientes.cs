@@ -48,6 +48,14 @@ namespace Web.Controller.Model
             set { _Tel = value; }
         }
 
+        private string _Cred;
+
+        public string Cred
+        {
+            get { return _Cred; }
+            set { _Cred = value; }
+        }
+
         private string _DataNasc;
 
         public string DataNasc

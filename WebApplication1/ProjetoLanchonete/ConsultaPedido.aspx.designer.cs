@@ -49,21 +49,21 @@ namespace WebApplication1.ProjetoLanchonete {
         protected global::System.Web.UI.WebControls.ListBox ListBox1;
         
         /// <summary>
-        /// resultped control.
+        /// Valped control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListItem resultped;
+        protected global::System.Web.UI.WebControls.TextBox Valped;
         
         /// <summary>
-        /// ListView control.
+        /// deb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView ListView;
+        protected global::System.Web.UI.WebControls.TextBox deb;
     }
 }

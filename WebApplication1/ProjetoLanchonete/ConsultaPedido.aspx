@@ -115,17 +115,22 @@
                             </div>
                             <%--Pedido--%>
                             <div class="form-group">
-                                <asp:ListBox CssClass="form-control" ID="ListBox1" runat="server" SelectionMode="Multiple" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" AutoPostBack="true" >
-                                    <asp:ListItem CssClass="form-control" id="resultped" runat="server"></asp:ListItem>
+                                <asp:ListBox CssClass="form-control" ID="ListBox1" runat="server" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged"  SelectionMode="Multiple"  autopostback="true">
+                                    <%--<asp:ListItem CssClass="form-control" id="resultped" runat="server"></asp:ListItem>--%>
                                 </asp:ListBox>
                             </div>
                             <br />
 
-                            <asp:listview CssClass="form-control" ID="ListView" runat="server" >
+                            <%--<asp:listview CssClass="form-control" ID="ListView" runat="server" >--%>
+                                
+                            <%--</asp:listview>--%>
 
-                            </asp:listview>
-                     
+                            <b class="alert-danger">Valor Devedor:</b>
+                            <asp:TextBox CssClass="form-control" placeholder="Valor Devedor" runat="server" AutoPostBack ="true" ID="Valped" />
+                            <asp:TextBox CssClass="form-control" placeholder="Valor a ser abatido" runat="server" AutoPostBack ="true" ID="deb" />
+                            
                             <br />
+                            <%--<asp:button ID ="btnPagar" runat="server" OnClick="btnPagar_Click" CssClass="form-control btn btn-success" />--%>
 
                         </div>
                     </form>

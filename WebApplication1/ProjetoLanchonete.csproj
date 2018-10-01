@@ -300,13 +300,11 @@
     <Content Include="obj\Debug\WebApplication1.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\WebApplication1.dll" />
     <Content Include="obj\Debug\WebApplication1.pdb" />
-    <Content Include="ProjetoLanchonete\CadastraProduto.aspx" />
     <Content Include="ProjetoLanchonete\CadastroCliente.aspx" />
     <Content Include="ProjetoLanchonete\ConsultaCliente.aspx" />
     <Content Include="ProjetoLanchonete\ConsultaPedido.aspx" />
     <Content Include="ProjetoLanchonete\ConsultaProduto.aspx" />
     <Content Include="ProjetoLanchonete\Pedidos.aspx" />
-    <Content Include="ProjetoLanchonete\ProdutoDetalhe.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -320,13 +318,6 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
-    <Compile Include="ProjetoLanchonete\CadastraProduto.aspx.cs">
-      <DependentUpon>CadastraProduto.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ProjetoLanchonete\CadastraProduto.aspx.designer.cs">
-      <DependentUpon>CadastraProduto.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ProjetoLanchonete\CadastroCliente.aspx.cs">
       <DependentUpon>CadastroCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -361,13 +352,6 @@
     </Compile>
     <Compile Include="ProjetoLanchonete\Pedidos.aspx.designer.cs">
       <DependentUpon>Pedidos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ProjetoLanchonete\ProdutoDetalhe.aspx.cs">
-      <DependentUpon>ProdutoDetalhe.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ProjetoLanchonete\ProdutoDetalhe.aspx.designer.cs">
-      <DependentUpon>ProdutoDetalhe.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

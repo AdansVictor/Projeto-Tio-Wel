@@ -21,6 +21,17 @@ namespace Web.Controller.Controller
         }
 
 
+        public Pedidos ConsultaPedidosVal(string Id)
+        {
+            return new PedidoDB().ConsultaPedidosVal(Id);
+        }
+
+        //public Pedidos PagarDeb(string Id, string cred, decimal result)
+        //{
+        //    return new PedidoDB().PagarDeb(Id, cred, result);
+        //}
+
+
 
     }
 }

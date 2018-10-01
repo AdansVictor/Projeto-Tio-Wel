@@ -47,6 +47,7 @@
                   <li><a href="/ProjetoLanchonete/ConsultaProduto.aspx">Produtos</a></li>
                   <li><a href="/ProjetoLanchonete/ConsultaCliente.aspx">Clientes</a></li>
                   <li><a href="/ProjetoLanchonete/Pedidos.aspx">Faça Aqui Seu Pedido</a></li>
+                  <li><a href="/ProjetoLanchonete/ConsultaPedido.aspx">Consultar pedidos</a></li>
                 </ul>
               </li>
               <li><a href="/ProjetoLanchonete/CadastroCliente.aspx">Adcionar Clientes</a></li>

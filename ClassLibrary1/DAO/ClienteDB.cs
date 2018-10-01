@@ -10,15 +10,16 @@ namespace Web.Controller.DAO
     public class ClienteDB
     {
         string conecta = ConfigurationManager.ConnectionStrings["ConectaBanco"].ConnectionString;
-        internal Clientes InserirCliente(string nome, string cpf, string end, string tel, string datanasc)
+        internal Clientes InserirCliente(string nome, string cpf, string end, string tel, string Cred, string datanasc)
         {
             SqlConnection conn = new SqlConnection(conecta);
-            string sqlQuery = "INSERT INTO CLIENTES (NomeCompleto,CPF,Ende,Tel,DataNasc)VALUES(@nomecompleto,@cpf,@end,@tel,@datanasc)";
+            string sqlQuery = "INSERT INTO CLIENTES (NomeCompleto,CPF,Ende,Tel,Cred,DataNasc)VALUES(@nomecompleto,@cpf,@end,@tel,@Cred,@datanasc)";
             SqlCommand comando = new SqlCommand(sqlQuery, conn);
             comando.Parameters.Add(new SqlParameter("@nomecompleto", nome));
             comando.Parameters.Add(new SqlParameter("@cpf", cpf));
             comando.Parameters.Add(new SqlParameter("@end", end));
             comando.Parameters.Add(new SqlParameter("@tel", tel));
+            comando.Parameters.Add(new SqlParameter("@Cred", Cred));
             comando.Parameters.Add(new SqlParameter("@datanasc", datanasc));
 
             try
@@ -63,6 +64,7 @@ namespace Web.Controller.DAO
                 clientes.CPF = leitor["CPF"].ToString();
                 clientes.Ende = leitor["Ende"].ToString();
                 clientes.Tel = leitor["Tel"].ToString();
+                clientes.Cred = leitor["Cred"].ToString();
                 clientes.DataNasc = leitor["DataNasc"].ToString();
                 clientes.DataCadastro = Convert.ToDateTime(leitor["DataCadastro"].ToString());
 
