@@ -127,10 +127,14 @@
 
                             <b class="alert-danger">Valor Devedor:</b>
                             <asp:TextBox CssClass="form-control" placeholder="Valor Devedor" runat="server" AutoPostBack ="true" ID="Valped" />
-                            <asp:TextBox CssClass="form-control" placeholder="Valor a ser abatido" runat="server" AutoPostBack ="true" ID="deb" />
+                            <asp:TextBox CssClass="form-control" placeholder="Credito do Cliente" runat="server" AutoPostBack ="true" ID="Cred" />
+                            <br />
+                            
+                            
                             
                             <br />
-                            <%--<asp:button ID ="btnPagar" runat="server" OnClick="btnPagar_Click" CssClass="form-control btn btn-success" />--%>
+                            <asp:button ID ="btnPagar" runat="server" OnClick="btnPagar_Click" CssClass="form-control btn btn-success" />
+                            <asp:TextBox CssClass="form-control" placeholder="Saldo Atualizado" runat="server" AutoPostBack ="true" ID="saldo" />
 
                         </div>
                     </form>

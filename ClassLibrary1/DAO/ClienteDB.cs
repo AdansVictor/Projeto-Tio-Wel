@@ -105,5 +105,82 @@ namespace Web.Controller.DAO
 
         }
 
+
+
+
+
+        //retorna o cliente selecionado
+        /// <summary>
+        /// Retorna o Credito que o Cliente possui
+        /// </summary>
+        /// <param name="Id">Id Do Cliente</param>
+        /// <returns></returns>
+        internal Clientes ConsultaCredClientes(string Id)
+        {
+            Clientes cli = new Clientes();
+            SqlConnection conn = new SqlConnection(conecta);
+
+            string sql = "Select Cred from Clientes where IdUser = @IdUser";
+
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.Add(new SqlParameter("@IdUser", Id));
+            conn.Open();
+
+            SqlDataReader leitor = cmd.ExecuteReader();
+
+            while (leitor.Read())
+
+            {
+                //Precisa finalizar a linha com .ToString
+
+
+                //Produtos.IdProd = Convert.ToInt32(leitor["IdProd"].ToString());
+                cli.Cred = leitor["Cred"].ToString();
+            }
+
+            conn.Close();
+
+            return cli;
+
+        }
+
+
+
+
+
+        internal void AttCredClientes(string Id, decimal cred)
+        {
+
+            try
+            {
+                using (var sc = new SqlConnection(conecta)) //implementa o DISPOSABLE, gerencia a conexão.
+                using (var cmd = sc.CreateCommand())
+                {
+                    sc.Open();
+                    cmd.CommandText = "Update Clientes set Cred = @Cred where IdCli = @IdCli";
+                    cmd.Parameters.Add(new SqlParameter("@IdCli", Id));
+                    cmd.Parameters.Add(new SqlParameter("@cred", cred));
+                    cmd.ExecuteNonQuery();
+                };
+                //conn.Close();
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception("Houve um problema na gravação dos dados!" + e);
+            }
+
+            //finally
+            //{
+            //    conn.Close();
+            //}
+
+
+            //}
+
+
+
+
+        }
     }
 }

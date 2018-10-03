@@ -16,6 +16,26 @@ Select NomeCompleto from Clientes where IdUser = 103
 select sum (ValDev) as ValDev From Pedidos where IdCli = 103
 
 
+UPDATE  tempDataView 
+SET     marks = 
+        (
+          SELECT marks 
+          FROM tempData b 
+          WHERE tempDataView.Name = b.Name
+        )
+
+
+WITH updateCTE AS
+(
+    SELECT sum(ValDev) as ValTot
+    FROM Pedidos
+    WHERE IdCli = 103
+)
+
+UPDATE updateCTE
+SET ValTot = 22;
+
+
 UPDATE Clientes
 SET Cred = 3.25
 WHERE IdUser = 105;

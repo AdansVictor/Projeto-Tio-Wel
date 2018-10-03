@@ -40,16 +40,42 @@ namespace WebApplication1.ProjetoLanchonete
         {
             var ped = new PedidoController().ConsultaPedidosVal(ListBox1.SelectedItem.Value);
             Valped.Text = ped.ValDev;
+            var cli = new ClienteController().ConsultaCredClientes(ListBox1.SelectedItem.Value);
+            Cred.Text = cli.Cred;
+
+
         }
 
-        //protected void btnPagar_Click(object sender, EventArgs e)
-        //{
-        //    string valped = Valped.Text;
-        //    var Consulta = new ClienteController().ConsultaCliente();
-        //    string cred = item.Cred.Text;
-        //    decimal result = Convert.ToDecimal(cred) - Convert.ToDecimal(valped);
+        protected void btnPagar_Click(object sender, EventArgs e)
+        {
+            string valped = Valped.Text;
 
-        //    var gravarped = new PedidoController().PagarDeb(valped, cred, result);
-        //}
+            var ped = new PedidoController().ConsultaPedidosVal(ListBox1.SelectedItem.Value);
+
+            var cli = new ClienteController().ConsultaCredClientes(ListBox1.SelectedItem.Value);
+
+            var cred = cli.Cred;
+
+
+
+
+
+            var saldo = Convert.ToDecimal(ped.ValDev) - Convert.ToDecimal(cli.Cred);
+
+
+
+            new PedidoController().PagarDeb(ListBox1.SelectedItem.Value, saldo);
+
+            
+            Valped.Text = ped.ValDev;
+
+
+
+
+            //string cred = deb.Text;
+            //decimal result = Convert.ToDecimal(cred) - Convert.ToDecimal(valped);
+
+            //var gravarped = new PedidoController().PagarDeb(valped, cred, result);
+        }
     }
 }

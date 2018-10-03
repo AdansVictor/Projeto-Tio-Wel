@@ -108,6 +108,11 @@ namespace Web.Controller.DAO
         }
 
 
+        /// <summary>
+        /// Retorna o Valor que o Cliente está devendo ValDev
+        /// </summary>
+        /// <param name="Id">Id do Cliente da tabela Pedidos</param>
+        /// <returns></returns>
         internal Pedidos ConsultaPedidosVal(string Id)
         {
             Pedidos ped = new Pedidos();
@@ -137,37 +142,42 @@ namespace Web.Controller.DAO
 
 
 
-        internal Clientes ConsultaClientecred(int IdUser, string Cred)
-        {
-            Clientes cred = new Clientes();
-            SqlConnection conn = new SqlConnection(conecta);
+        //internal Clientes ConsultaClientecred(int IdUser, string Cred)
+        //{
+        //    Clientes cred = new Clientes();
+        //    SqlConnection conn = new SqlConnection(conecta);
 
-            string sql = "select * from Clientes";
+        //    string sql = "select * from Clientes";
 
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            cmd.Parameters.Add(new SqlParameter("@IdCli", IdUser));
-            cmd.Parameters.Add(new SqlParameter("@Cred", Cred));
-            conn.Open();
+        //    SqlCommand cmd = new SqlCommand(sql, conn);
+        //    cmd.Parameters.Add(new SqlParameter("@IdCli", IdUser));
+        //    cmd.Parameters.Add(new SqlParameter("@Cred", Cred));
+        //    conn.Open();
 
-            SqlDataReader leitor = cmd.ExecuteReader();
+        //    SqlDataReader leitor = cmd.ExecuteReader();
 
-            while (leitor.Read())
+        //    while (leitor.Read())
 
-            {
-                cred.Cred = leitor["ValDev"].ToString();
-            }
+        //    {
+        //        cred.Cred = leitor["ValDev"].ToString();
+        //    }
 
-            conn.Close();
+        //    conn.Close();
 
-            return cred;
+        //    return cred;
 
-        }
-
-
+        //}
 
 
 
-        internal Pedidos PagarDeb(string Id, decimal cred, decimal result)
+
+
+        /// <summary>
+        /// Atualiza o Valor que o Cliente está devendo da tabela Pedidos
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <param name="cred"></param>
+        internal void PagarDeb(string Id, decimal saldo)
         {
 
             try
@@ -176,9 +186,9 @@ namespace Web.Controller.DAO
                 using (var cmd = sc.CreateCommand())
                 {
                     sc.Open();
-                    cmd.CommandText = "Update Clientes set Cred = @cred where IdCli = @IdCli";
+                    cmd.CommandText = "Update Pedidos set ValDev = @saldo where IdCli = @IdCli";
                     cmd.Parameters.Add(new SqlParameter("@IdCli", Id));
-                    cmd.Parameters.Add(new SqlParameter("@cred", cred));
+                    cmd.Parameters.Add(new SqlParameter("@saldo", saldo));
                     cmd.ExecuteNonQuery();
                 };
                 //conn.Close();
@@ -193,7 +203,7 @@ namespace Web.Controller.DAO
             //{
             //    conn.Close();
             //}
-            return null;
+         
 
             //}
 

@@ -25,5 +25,24 @@ namespace Web.Controller.Controller
             return new ClienteDB().ConsultaClientes(Id);
         }
 
+
+        
+        /// <summary>
+        /// Consulta Credito do Cliente
+        /// </summary>
+        /// <param name="Id">Id do Cliente da tabela CLIENTES</param>
+        /// <returns></returns>
+        public Clientes ConsultaCredClientes(string Id)
+        {
+            return new ClienteDB().ConsultaCredClientes(Id);
+        }
+
+
+
+        //public Clientes AttCredClientes(string Id, decimal cred)
+        //{
+        //    new ClienteDB().AttCredClientes(Id, cred);
+        //}
+
     }
 }

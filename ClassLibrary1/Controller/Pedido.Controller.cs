@@ -8,6 +8,15 @@ namespace Web.Controller.Controller
 {
     public class PedidoController
     {
+        /// <summary>
+        /// Insere Pedidos na tabela Pedidos
+        /// </summary>
+        /// <param name="IdCli"></param>
+        /// <param name="IdProd"></param>
+        /// <param name="QuantProd"></param>
+        /// <param name="ValorProduto"></param>
+        /// <param name="ValDev"></param>
+        /// <returns></returns>
         public Pedidos InserirPedido(string IdCli, string IdProd, string QuantProd, string ValorProduto, decimal ValDev)
         {
             return new PedidoDB().InserirPedido(IdCli, IdProd, QuantProd,ValorProduto, ValDev);
@@ -21,15 +30,25 @@ namespace Web.Controller.Controller
         }
 
 
+        /// <summary>
+        /// Chama uma função que retorna o valor devedor na tabela PEDIDOS
+        /// </summary>
+        /// <param name="Id">Id do Cliente</param>
+        /// <returns></returns>
         public Pedidos ConsultaPedidosVal(string Id)
         {
             return new PedidoDB().ConsultaPedidosVal(Id);
         }
 
-        //public Pedidos PagarDeb(string Id, string cred, decimal result)
-        //{
-        //    return new PedidoDB().PagarDeb(Id, cred, result);
-        //}
+        /// <summary>
+        /// Chama uma função que atualiza o ValDev na tabela Pedidos
+        /// </summary>
+        /// <param name="Id">Código de registro do cliente</param>
+        /// <param name="saldo">Saldo atual do cliente</param>
+        public void PagarDeb(string Id, decimal saldo)
+        {
+             new PedidoDB().PagarDeb(Id, saldo);
+        }
 
 
 

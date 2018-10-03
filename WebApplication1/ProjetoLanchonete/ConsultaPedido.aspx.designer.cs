@@ -58,12 +58,30 @@ namespace WebApplication1.ProjetoLanchonete {
         protected global::System.Web.UI.WebControls.TextBox Valped;
         
         /// <summary>
-        /// deb control.
+        /// Cred control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox deb;
+        protected global::System.Web.UI.WebControls.TextBox Cred;
+        
+        /// <summary>
+        /// btnPagar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnPagar;
+        
+        /// <summary>
+        /// saldo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox saldo;
     }
 }
