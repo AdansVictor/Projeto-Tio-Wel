@@ -133,7 +133,7 @@
                             
                             
                             <br />
-                            <asp:button ID ="btnPagar" runat="server" OnClick="btnPagar_Click" CssClass="form-control btn btn-success" />
+                            <asp:button ID ="btnPagar" CssClass="form-control btn btn-success" runat="server" Text="Pagar" OnClick="btnPagar_Click"/>
                             <asp:TextBox CssClass="form-control" placeholder="Saldo Atualizado" runat="server" AutoPostBack ="true" ID="saldo" />
 
                         </div>
