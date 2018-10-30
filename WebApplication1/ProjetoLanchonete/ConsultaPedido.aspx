@@ -186,42 +186,185 @@
                     </div>
                 </div>
             </div>
+    <%--PRODUTOS--%>
+
+    <!-- Start: Produto1 -->
+    <section class="section--padding-bottom-small">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="post">
+                        <div class="image">
+                            <a href="text.html">
+                                <img src="../img/5.jpeg" alt="" class="img-responsive"/></a>
+                        </div>
+                        <h3><a href="text.html">Hamburgão do Serjão</a></h3>
+                        <p class="post__intro">Hambúrguer 250 gramas assado na brasa, pão especial amanteigado, alface, tomate, queijo muçarela, barbecue e opcional adicionar batata frita ou batata canoa.</p>
+                        <p>
+                            <button type="button" class="btn btn-ghost" data-toggle="modal" data-target="#myModalhamb">Continue Lendo</button>
+                        </p>
+                        <div class="modal fade" id="myModalhamb" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabelhamb">Delicia de Hamburguer</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        Burger de Falafel da casa (bolinho de grão de bico com temperos árabes), alface, tomate, hortelã, salsinha, cebola e molho tahine, servidos em pão de hamburger. Acompanhado de porção de batata frita.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Produto1 -->
+
+                <!-- Start: Produto2 -->
+                <div class="col-sm-6">
+                    <div class="post">
+                        <div class="image">
+                            <a href="text.html">
+                                <img src="../img/4.jpeg" alt="" class="img-responsive"/></a>
+                        </div>
+                        <h3>Açai com Deliciosas Frutas</h3>
+                        <p class="post__intro">Típico da região da Amazônia, o açaí vem conquistando novos mercados e novos adeptos todos os dias. Isso porque a fruta, de cor roxa, tem sabor inigualável e ainda oferece muitos benefícios.</p>
+                        <p>
+                            <button type="button" class="btn btn-ghost" data-toggle="modal" data-target="#myModalacai">Continue Lendo</button>
+                        </p>
+
+                        <div class="modal fade" id="myModalacai" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabelacai">Delicia de Açai</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        Típico da região da Amazônia, o açaí vem conquistando novos mercados e novos adeptos todos os dias. Isso porque a fruta, de cor roxa, tem sabor inigualável e ainda oferece muitos benefícios.
+
+Rico em vitaminas, carboidratos, ferro e proteínas, o açaí também possui um alto valor nutricional. Além disso, é considerado campeão brasileiro no combate aos radicais livres pela grande quantidade de antioxidantes e está na lista dos alimentos mais saudáveis que existem.
+
+A fruta pode ser consumida de diversas maneiras: em sucos, vitaminas, sorvetes e ainda combinada com outras frutas. É isso mesmo! O açaí pode ser consumido acompanhado de outros sabores.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Produto2 -->
+
+
+            <!-- Start: Produto3 -->
             <div class="row">
                 <div class="col-sm-4">
                     <div class="post">
                         <div class="image">
                             <a href="text.html">
-                                <img src="../img/5.jpeg" alt="" class="img-responsive" /></a>
+                                <img src="../img/5.jpeg" alt="" class="img-responsive"/></a>
                         </div>
-                        <h3><a href="text.html">Rit eget tincidunt condimentum</a></h3>
-                        <p class="post__intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                        <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue Lendo     </a></p>
+                        <h3><a href="text.html">Hamburgão do Serjão</a></h3>
+                        <p class="post__intro">Hambúrguer 250 gramas assado na brasa, pão especial amanteigado, alface, tomate, queijo muçarela, barbecue e opcional adicionar batata frita ou batata canoa.</p>
+                        <p>
+                            <button type="button" class="btn btn-ghost" data-toggle="modal" data-target="#myModalhamb">Continue Lendo</button>
+                        </p>
+                        <div class="modal fade" id="myModalhamb2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabelhamb2">Delicia de Hamburguer</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        Burger de Falafel da casa (bolinho de grão de bico com temperos árabes), alface, tomate, hortelã, salsinha, cebola e molho tahine, servidos em pão de hamburger. Acompanhado de porção de batata frita.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- End: Produto3 -->
+
+
+                <!-- Start: Produto4 -->
                 <div class="col-sm-4">
                     <div class="post">
                         <div class="image">
                             <a href="text.html">
-                                <img src="../img/1.jpeg" alt="" class="img-responsive" /></a>
+                                <img src="../img/1.jpeg" alt="" class="img-responsive"/></a>
                         </div>
-                        <h3><a href="text.html">Tempor sit amet</a></h3>
-                        <p class="post__intro">Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
-                        <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue Lendo     </a></p>
+                        <h3><a href="text.html">Hambúrguer Bomba de Queijo</a></h3>
+                        <p class="post__intro">CheesEgg Hamburguer produzido com pão artesanal, burguer (200 g) grelhado no fogo, queijo mussarela, ovo com gema ""mole"" e maionese verde da casa.</p>
+                        <p>
+                            <button type="button" class="btn btn-ghost" data-toggle="modal" data-target="#myModalhamb3">Continue Lendo</button></p>
+                        <div class="modal fade" id="myModalhamb3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabelhamb3">Delicia de Hamburguer</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        CheesEgg Hamburguer produzido com pão artesanal, burguer (200 g) grelhado no fogo, queijo mussarela, ovo com gema ""mole"" e maionese verde da casa.
+                                    <p>Restaurante: Johnnys Taste</p>
+                                        <p>Cardápio: Morumbi</p>
+                                        <p>Grupo: Everis (Morumbi)</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- End: Produto4 -->
+
+                <%--PRODUTO5--%>
                 <div class="col-sm-4">
                     <div class="post">
                         <div class="image">
                             <a href="text.html">
-                                <img src="../img/aa.jpeg" alt="" class="img-responsive" /></a>
+                                <img src="../img/ee.jpeg" alt="" class="img-responsive"/></a>
                         </div>
-                        <h3><a href="text.html">Vestibulum erat wisi</a></h3>
-                        <p class="post__intro">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                        <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue Lendo     </a></p>
+                        <h3><a href="text.html">File de Frango Fit</a></h3>
+                        <p class="post__intro">Filé de frango grelhado acompanhado de arroz branco e feijão e seleta de legumes(ervilha, batata e cenoura) bem colorida.</p>
+                        <p>
+                            <button type="button" class="btn btn-ghost" data-toggle="modal" data-target="#myModalfra">Continue Lendo</button></p>
+                        <div class="modal fade" id="myModalfra" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabelfra">Delicia de Hamburguer</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        Filé de frango grelhado acompanhado de arroz branco e feijão e seleta de legumes(ervilha, batata e cenoura) bem colorida.
+                                    <p>Restaurante: Johnnys Taste</p>
+                                        <p>Cardápio: Morumbi</p>
+                                        <p>Grupo: Everis (Morumbi)</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+        </div>      
     </section>
 
 

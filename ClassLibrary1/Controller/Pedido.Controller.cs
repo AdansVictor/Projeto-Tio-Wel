@@ -47,7 +47,7 @@ namespace Web.Controller.Controller
         /// <param name="saldo">Saldo atual do cliente</param>
         public void PagarDeb(string Id, decimal saldo)
         {
-             new PedidoDB().PagarDeb(Id, saldo);
+            new PedidoDB().PagarDeb(Id, saldo);         
         }
 
 
